@@ -21,6 +21,9 @@ public class NeoStoxBaseClass {
 	
 	public static void CloseNeoStox() {
 		//closing browser
+		//adding
+		//multiple comments
+		//to compare pull request
 		Reporter.log("Closing Browser", true);
 		driver.close();
 	}
