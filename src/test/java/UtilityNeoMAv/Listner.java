@@ -16,20 +16,15 @@ public class Listner implements ITestListener {
 	public void onTestSuccess(ITestResult result)
 	{
 		String methodName = result.getTestName();
-		
-		
 		Reporter.log("TC "+ methodName +"successfully completed", true);
 	}
 	
 	public void onTestFailure(ITestResult result, WebDriver driver) throws IOException {
 		Reporter.log("TC "+ result.getTestName() +"failed", true);
-		
-		
 		UtilityMethos.ss(driver, "FailedTC");
 	}
 	
 	public void onTestSkipped(ITestResult result) {
-		
 		
 		Reporter.log("TC" +result.getTestName() +"skipped.. ",true);
 	}
