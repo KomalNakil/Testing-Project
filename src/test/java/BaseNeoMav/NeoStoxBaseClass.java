@@ -20,7 +20,8 @@ public class NeoStoxBaseClass {
 	}
 	
 	public static void CloseNeoStox() {
-		Reporter.log("Cloasing Browser", true);
+		//closing browser
+		Reporter.log("Closing Browser", true);
 		driver.close();
 	}
 }
