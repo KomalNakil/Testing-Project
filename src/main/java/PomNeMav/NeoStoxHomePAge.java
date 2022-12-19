@@ -13,6 +13,7 @@ public class NeoStoxHomePAge {
 	@FindBy(xpath = "(//span[text()='Hi Komal Dhage'])[1]") private WebElement uName;
 	@FindBy(xpath = "//span[text()='Logout']") private WebElement logoutButton;
 	@FindBy(xpath = "//span[@id='lbl_curbalancetop']") private WebElement actualBalance;
+	//This is home page
 	
 	public NeoStoxHomePAge(WebDriver driver)
 	{
